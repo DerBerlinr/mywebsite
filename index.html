@@ -88,19 +88,20 @@
 
     <section id="home" class="showcase">
         <div class="container">
-            <h1>Welcome to My Personal Website</h1>
-            <p>Erik Haarländer - Computer Science Student</p>
+            <h1>Erik Haarländer</h1>
+            <p>Computer Science Student</p>
         </div>
     </section>
 
     <section id="about" class="content-section container">
         <h2>About Me</h2>
-        <p>I'm currently studying Computer Science at TU Berlin. I work at an IT firm, lead a local swimming club in Berlin, and sing in a choir. This website serves as my personal CV.</p>
+        <p>I'm currently studying Computer Science at TU Berlin. I work at an IT firm, lead a local swimming club in Berlin, and sing in a choir.</p>
     </section>
 
     <section id="education" class="content-section container">
         <h2>Education</h2>
-        <p><strong>Technical University of Berlin</strong> - Bachelor of Science in Computer Science</p>
+        <p><strong>Goethe Gymnasium Lichterfelde</strong> - Abitur</p>
+        <p><strong>Technical University of Berlin</strong> - Bachelor of Science in Computer Science (WIP)</p>
     </section>
 
     <section id="experience" class="content-section container">
@@ -117,16 +118,27 @@
     <section id="skills" class="content-section container">
         <h2>Skills</h2>
         <ul>
-            <li>Programming Languages: Python, C, Java</li>
-            <li>Tools and Technologies: Git, GitLab, Docker</li>
-            <li>Other skills: List other relevant skills here</li>
+            <li>Programming Languages: Python, C, Java, basic knowledge in Haskell, JavaScript, Assembly (MIPS)</li>
+            <li>Tools and Technologies: Git, GitLab, Docker, basic knowledge in PyTorch, TensorFlow</li>
+            <li>Other skills: STM32, Linux</li>
         </ul>
     </section>
 
     <section id="contact" class="content-section container">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>Phone: +49 123 456 7890</p>
+        <div class="contact-form">
+            <form action="/submit_contact" method="post">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
     </section>
 
     <footer>
